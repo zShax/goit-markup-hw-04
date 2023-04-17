@@ -1,0 +1,87 @@
+:root {
+  /* Brand colors */
+  --brand-blue: #2196f3;
+  --brand-gray: #2f303a;
+
+  /* Font colors */
+  --text-default: #212121;
+  --text-secondary: #757575;
+  --text-white: #fff;
+
+  /* Background colors */
+  --background-white: #fff;
+  --background-primary: #e5e5e5;
+  --background-secondary: #f5f4fa;
+}
+
+body {
+  color: var(--text-default);
+  font-family: "Roboto", sans-serif, serif;
+}
+
+/* Reusables */
+.font__size--14 {
+  font-size: 14px;
+}
+.font__size--16 {
+  font-size: 16px;
+}
+.font__size--18 {
+  font-size: 18px;
+}
+
+.font__weight--500 {
+  font-weight: 500;
+}
+.font__weight--700 {
+  font-weight: 700;
+}
+
+/* My styling */
+
+/* logo */
+.logo {
+  font-size: 26px;
+  line-height: 2;
+  font-family: "Raleway", sans-serif, serif;
+}
+.logo--blue {
+  color: var(--brand-blue);
+}
+
+/* header nav & contacts */
+.header {
+  background-color: var(--background-white);
+}
+
+.header__navigation__element {
+  cursor: pointer;
+  color: var(--text-default);
+  line-height: 1em;
+  text-decoration: none;
+}
+
+.contacts {
+  cursor: pointer;
+  color: var(--text-secondary);
+  line-height: 1em;
+  text-decoration: none;
+}
+
+.header__navigation__element:hover,
+.header__navigation__element:focus,
+.contacts:hover,
+.contacts:focus {
+  color: var(--brand-blue);
+}
+
+/* footer */
+.footer {
+  background-color: var(--brand-gray);
+}
+
+.contacts__address {
+  color: var(--text-white);
+  font-style: normal;
+  line-height: 1em;
+}

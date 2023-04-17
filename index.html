@@ -4,21 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts - Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <a><span>Web</span>Studio</a>
+    <header class="header">
+      <a class="logo font__weight--700"
+        ><span class="logo--blue">Web</span>Studio</a
+      >
       <nav>
-        <ul>
-          <li><a>Studio</a></li>
-          <li><a>Portfolio</a></li>
-          <li><a>Contacts</a></li>
+        <ul class="header__navigation">
+          <li>
+            <a
+              class="header__navigation__element font__weight--500"
+              href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a
+              class="header__navigation__element font__weight--500"
+              href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="header__navigation__element font__weight--500"
+              >Contacts</a
+            >
+          </li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+12127724150">+1&nbsp;212-772-4150</a>
+      <a
+        href="mailto:info@devstudio.com"
+        class="contacts contacts__email font__weight--500"
+        >info@devstudio.com</a
+      >
+      <a
+        href="tel:+12127724150"
+        class="contacts contacts__phone font__weight--500"
+        >+1&nbsp;212-772-4150</a
+      >
     </header>
 
     <!-- Main section -->
@@ -123,14 +165,20 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <a><span>Web</span>Studio</a>
+    <footer class="footer">
+      <a class="logo font__weight--700"
+        ><span class="logo--blue">Web</span>Studio</a
+      >
       <br />
-      <address>695 Park Ave, NY 10065, USA</address>
+      <address class="contacts__address">695 Park Ave, NY 10065, USA</address>
       <br />
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a href="mailto:info@devstudio.com" class="contacts contacts__email"
+        >info@devstudio.com</a
+      >
       <br />
-      <a href="tel:+12127724150">+1&nbsp;212-772-4150</a>
+      <a href="tel:+12127724150" class="contacts contacts__phone"
+        >+1&nbsp;212-772-4150</a
+      >
     </footer>
   </body>
 </html>
