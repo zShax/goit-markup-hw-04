@@ -53,12 +53,12 @@
       </nav>
       <a
         href="mailto:info@devstudio.com"
-        class="contacts contacts__email font__weight--500"
+        class="contacts font__weight--500 font__color--secondary"
         >info@devstudio.com</a
       >
       <a
         href="tel:+12127724150"
-        class="contacts contacts__phone font__weight--500"
+        class="contacts font__weight--500 font__color--secondary"
         >+1&nbsp;212-772-4150</a
       >
     </header>
@@ -66,37 +66,61 @@
     <!-- Main section -->
     <main>
       <!-- Hero section -->
-      <section>
-        <h1>EFFECTIVE SOLUTIONS FOR<br />YOUR BUSINESS</h1>
-        <button type="button">Order a service</button>
+      <section class="main__hero-section">
+        <h1 class="main__hero-section__heading font__weight--900">
+          EFFECTIVE SOLUTIONS FOR<br />YOUR BUSINESS
+          <!-- br tag as a reminder to go to a new line -->
+        </h1>
+        <button
+          type="button"
+          class="main__hero-section__button font__weight--700"
+        >
+          Request our service
+        </button>
       </section>
       <!-- Why us -->
-      <article>
+      <article class="main__why-us">
         <ul>
           <li>
-            <h2>ATTENTION TO DETAILS</h2>
-            <p>
+            <h2 class="main__why-us__heading font__weight--700 font__size--14">
+              ATTENTION TO DETAILS
+            </h2>
+            <p
+              class="main__why-us__paragraph font__size--14 font__color--secondary"
+            >
               We go into all the details and processes of your business to
               develop a customized solution.
             </p>
           </li>
           <li>
-            <h2>PUNCTUALITY</h2>
-            <p>
+            <h2 class="main__why-us__heading font__weight--700 font__size--14">
+              PUNCTUALITY
+            </h2>
+            <p
+              class="main__why-us__paragraph font__size--14 font__color--secondary"
+            >
               With us, you can feel safe and secure. An important principle of
               the company: respect your time and deadlines.
             </p>
           </li>
           <li>
-            <h2>PLANNING</h2>
-            <p>
+            <h2 class="main__why-us__heading font__weight--700 font__size--14">
+              PLANNING
+            </h2>
+            <p
+              class="main__why-us__paragraph font__size--14 font__color--secondary"
+            >
               You will be able to observe and participate in every phase of
               solution development and implementation.
             </p>
           </li>
           <li>
-            <h2>MODERN TECHNOLOGIES</h2>
-            <p>
+            <h2 class="main__why-us__heading font__weight--700 font__size--14">
+              MODERN TECHNOLOGIES
+            </h2>
+            <p
+              class="main__why-us__paragraph font__size--14 font__color--secondary"
+            >
               We use innovative tools to solve assigned tasks. It's time to
               simplify work processes.
             </p>
@@ -104,61 +128,71 @@
         </ul>
       </article>
       <!-- What we do -->
-      <article>
-        <h2>What we do</h2>
-        <img
-          src="./images/img-1.jpg"
-          alt="Programming & Development"
-          width="370"
-        />
-        <img src="./images/img-2.jpg" alt="Mobile Technologies" width="370" />
-        <img src="./images/img-3.jpg" alt="Arts & Design" width="370" />
+      <article class="main__what-we-do">
+        <h2 class="main__what-we-do__heading font__size--32 font__weight--700">
+          What we do
+        </h2>
+        <figure>
+          <img
+            src="./images/img-1.jpg"
+            alt="Programming & Development"
+            width="370"
+          />
+        </figure>
+        <figure>
+          <img src="./images/img-2.jpg" alt="Mobile Technologies" width="370" />
+        </figure>
+        <figure>
+          <img src="./images/img-3.jpg" alt="Arts & Design" width="370" />
+        </figure>
       </article>
       <!-- Our team -->
-      <article>
-        <h2>Our Team</h2>
-        <figure>
+      <article class="main__our-team">
+        <h2 class="main__our-team__heading font__size--32 font__weight--700">
+          Our Team
+        </h2>
+        <figure class="font__size--16">
           <img
             src="./images/christopher-walker.jpg"
             alt="Christopher Walker - Product Designer"
             width="270"
           />
-          <figcaption>
+          <figcaption class="main__our-team__caption">
             <strong>Christopher Walker</strong><br />
-            Product Designer
+            <p class="font__color--secondary">Product Designer</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="font__size--16">
           <img
             src="./images/kylie-evans.jpg"
             alt="Kylie Evans - Frontend Developer"
             width="270"
           />
-          <figcaption>
+          <figcaption class="main__our-team__caption">
             <strong>Kylie Evans</strong><br />
-            Frontend Developer
+            <p class="font__color--secondary">Frontend Developer</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="font__size--16">
           <img
             src="./images/ryan-harris.jpg"
             alt="Ryan Harris - Marketing"
             width="270"
           />
-          <figcaption>
+          <figcaption class="main__our-team__caption">
             <strong>Ryan Harris</strong><br />
-            Marketing
+            <p class="font__color--secondary">Marketing</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="font__size--16">
           <img
             src="./images/tyler-moore.jpg"
             alt="Tyler Moore - UI Designer"
             width="270"
           />
-          <figcaption>
+          <figcaption class="main__our-team__caption">
             <strong>Tyler Moore</strong><br />
-            UI Designer
+            <p class="font__color--secondary">UI Designer</p>
           </figcaption>
         </figure>
       </article>
@@ -172,11 +206,13 @@
       <br />
       <address class="contacts__address">695 Park Ave, NY 10065, USA</address>
       <br />
-      <a href="mailto:info@devstudio.com" class="contacts contacts__email"
+      <a
+        href="mailto:info@devstudio.com"
+        class="contacts font__color--secondary"
         >info@devstudio.com</a
       >
       <br />
-      <a href="tel:+12127724150" class="contacts contacts__phone"
+      <a href="tel:+12127724150" class="contacts font__color--secondary"
         >+1&nbsp;212-772-4150</a
       >
     </footer>

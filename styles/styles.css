@@ -1,3 +1,5 @@
+/* GLOBAL STYLES */
+/* Variables */
 :root {
   /* Brand colors */
   --brand-blue: #2196f3;
@@ -14,6 +16,7 @@
   --background-secondary: #f5f4fa;
 }
 
+/* Body defaults */
 body {
   color: var(--text-default);
   font-family: "Roboto", sans-serif, serif;
@@ -29,6 +32,9 @@ body {
 .font__size--18 {
   font-size: 18px;
 }
+.font__size--32 {
+  font-size: 32px;
+}
 
 .font__weight--500 {
   font-weight: 500;
@@ -36,34 +42,39 @@ body {
 .font__weight--700 {
   font-weight: 700;
 }
+.font__weight--900 {
+  font-weight: 900;
+}
 
-/* My styling */
+.font__color--default {
+  color: var(--text-default);
+}
+.font__color--secondary {
+  color: var(--text-secondary);
+}
+.font__color--white {
+  color: var(--text-white);
+}
 
-/* logo */
+/* Logo */
 .logo {
   font-size: 26px;
-  line-height: 2;
+  line-height: 1.9em;
   font-family: "Raleway", sans-serif, serif;
 }
 .logo--blue {
   color: var(--brand-blue);
 }
 
-/* header nav & contacts */
+/* Header */
 .header {
   background-color: var(--background-white);
 }
-
-.header__navigation__element {
+.header__navigation__element,
+.header__navigation__element:active,
+.header__navigation__element:visited {
   cursor: pointer;
   color: var(--text-default);
-  line-height: 1em;
-  text-decoration: none;
-}
-
-.contacts {
-  cursor: pointer;
-  color: var(--text-secondary);
   line-height: 1em;
   text-decoration: none;
 }
@@ -75,13 +86,94 @@ body {
   color: var(--brand-blue);
 }
 
-/* footer */
+/* Footer */
 .footer {
   background-color: var(--brand-gray);
 }
 
+/* Contacts */
+.contacts {
+  cursor: pointer;
+  line-height: 1em;
+  text-decoration: none;
+}
 .contacts__address {
   color: var(--text-white);
   font-style: normal;
   line-height: 1em;
+}
+
+/* INDEX.HTML */
+/* Hero Section */
+.main__hero-section {
+  background-color: var(--brand-gray);
+  color: var(--text-white);
+}
+
+.main__hero-section__heading {
+  font-size: 44px;
+  line-height: 3.75em;
+}
+.main__hero-section__button,
+.main__hero-section__button:active {
+  cursor: pointer;
+  background-color: var(--brand-blue);
+  color: var(--text-white);
+  line-height: 1.9em;
+}
+.main__hero-section__button:hover,
+.main__hero-section__button:focus {
+  background-color: #2195f3ee;
+}
+
+/* Why us */
+.main__why-us {
+  background-color: var(--background-white);
+}
+.main__why-us__heading {
+  line-height: 1em;
+}
+.main__why-us__paragraph {
+  line-height: 1.5em;
+}
+
+/* What we do */
+.main__what-we-do {
+  background-color: var(--background-white);
+}
+.main__what-we-do__heading {
+  line-height: 2.25em;
+}
+
+/* Our team */
+.main__our-team {
+  background-color: var(--background-secondary);
+}
+.main__our-team__heading {
+  line-height: 2.25em;
+}
+.main__our-team__caption {
+  line-height: 2.25em;
+}
+
+/* PORTFOLIO.HTML */
+/* Filters */
+.main__filters__button,
+.main__filters__button:active {
+  cursor: pointer;
+  background-color: var(--background-secondary);
+  line-height: 1.6em;
+}
+.main__filters__button:hover,
+.main__filters__button:focus {
+  background-color: #2195f3;
+  color: var(--text-white);
+}
+
+/* Listings */
+.main__listings__heading {
+  line-height: 2.25em;
+}
+.main__listings__paragraph {
+  line-height: 1.9em;
 }
