@@ -59,7 +59,7 @@ body {
 /* Logo */
 .logo {
   font-size: 26px;
-  line-height: 1.9em;
+  line-height: 1.9;
   font-family: "Raleway", sans-serif, serif;
 }
 .logo--light {
@@ -78,7 +78,7 @@ body {
 .header__navigation__element:visited {
   cursor: pointer;
   color: var(--text-default);
-  line-height: 1em;
+  line-height: 1;
   text-decoration: none;
 }
 
@@ -97,13 +97,13 @@ body {
 /* Contacts */
 .contacts {
   cursor: pointer;
-  line-height: 1em;
+  line-height: 1;
   text-decoration: none;
 }
 .contacts__address {
   color: var(--text-white);
   font-style: normal;
-  line-height: 1em;
+  line-height: 1;
 }
 
 /* INDEX.HTML */
@@ -115,14 +115,14 @@ body {
 
 .main__hero-section__heading {
   font-size: 44px;
-  line-height: 3.75em;
+  line-height: 3.75;
 }
 .main__hero-section__button,
 .main__hero-section__button:active {
   cursor: pointer;
   background-color: var(--brand-blue);
   color: var(--text-white);
-  line-height: 1.9em;
+  line-height: 1.9;
 }
 .main__hero-section__button:hover,
 .main__hero-section__button:focus {
@@ -134,10 +134,10 @@ body {
   background-color: var(--background-white);
 }
 .main__why-us__heading {
-  line-height: 1em;
+  line-height: 1;
 }
 .main__why-us__paragraph {
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 /* What we do */
@@ -145,7 +145,7 @@ body {
   background-color: var(--background-white);
 }
 .main__what-we-do__heading {
-  line-height: 2.25em;
+  line-height: 2.25;
 }
 
 /* Our team */
@@ -153,10 +153,10 @@ body {
   background-color: var(--background-secondary);
 }
 .main__our-team__heading {
-  line-height: 2.25em;
+  line-height: 2.25;
 }
 .main__our-team__caption {
-  line-height: 2.25em;
+  line-height: 2.25;
 }
 
 /* PORTFOLIO.HTML */
@@ -165,7 +165,7 @@ body {
 .main__filters__button:active {
   cursor: pointer;
   background-color: var(--background-secondary);
-  line-height: 1.6em;
+  line-height: 1.6;
 }
 .main__filters__button:hover,
 .main__filters__button:focus {
@@ -175,8 +175,8 @@ body {
 
 /* Listings */
 .main__listings__heading {
-  line-height: 2.25em;
+  line-height: 2.25;
 }
 .main__listings__paragraph {
-  line-height: 1.9em;
+  line-height: 1.9;
 }
