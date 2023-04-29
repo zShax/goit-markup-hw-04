@@ -1,4 +1,10 @@
 /* GLOBAL STYLES */
+/* Normalizer */
+@import "node_modules/modern-normalize/modern-normalize.css";
+* {
+  margin: 0;
+}
+
 /* Variables */
 :root {
   /* Brand colors */
