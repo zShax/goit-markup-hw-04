@@ -85,7 +85,7 @@ body {
 .logo:active,
 .logo:visited {
   font-size: 26px;
-  line-height: 1.9;
+  line-height: 1.5;
   font-family: "Raleway", sans-serif, serif;
   text-decoration: none;
   color: var(--text-black);
@@ -157,6 +157,8 @@ body {
   list-style: none;
 
   display: flex;
+
+  gap: 0 50px;
 }
 
 .header__navigation__element a,
@@ -173,9 +175,6 @@ body {
 .header__navigation__element:last-child a {
   margin-right: 385px;
 }
-.header__navigation__element:not(:last-child) {
-  margin-right: 50px;
-}
 
 .header__navigation__element a:hover,
 .header__navigation__element a:focus,
@@ -186,23 +185,23 @@ body {
 
 /* Footer */
 .footer {
-  display: block;
   max-width: 1600px;
+
+  display: flex;
+
   background-color: var(--brand-gray);
 }
 
 .footer__wrapper {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 12px;
 
   margin: 60px 0 60px 215px;
 }
-
-.footer__wrapper .logo {
-  padding-bottom: 28px;
-}
-/* why won't this work */
-.footer__wrapper .contacts:first-child {
-  margin-bottom: 10px;
+.footer__wrapper *:first-child {
+  margin-bottom: 16px;
 }
 
 /* Contacts */
@@ -210,11 +209,10 @@ body {
   cursor: pointer;
   line-height: 1;
   text-decoration: none;
-  margin-bottom: 28px;
 }
-.contacts:first-of-type {
-  margin-right: 40px;
-}
+/* .contacts:nth-of-type(2) {
+  margin-left: -10px;
+} Not currently working */
 .contacts__address {
   color: var(--text-white);
   font-style: normal;
@@ -230,9 +228,12 @@ body {
   max-width: 1600px;
 
   display: flex;
+  flex-direction: column;
+
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+
+  gap: 30px 0;
 
   text-align: center;
 
@@ -244,7 +245,7 @@ body {
   font-size: 44px;
   line-height: 1.5;
 
-  margin: 200px 0 30px 0;
+  margin: 200px 0 0 0;
 }
 .main__hero-section__button,
 .main__hero-section__button:active {
@@ -270,13 +271,12 @@ body {
   display: flex;
   justify-content: center;
 
+  gap: 30px;
+
   background-color: var(--background-white);
 }
 .main__why-us__element {
   max-width: 270px;
-}
-.main__why-us__element:not(:last-child) {
-  margin-right: 30px;
 }
 .main__why-us__element__heading {
   line-height: 1;
@@ -292,10 +292,13 @@ body {
 /* What we do */
 .main__what-we-do {
   display: flex;
+  flex-wrap: wrap;
+
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
+
+  gap: 50px 30px;
 
   background-color: var(--background-white);
 }
@@ -303,12 +306,7 @@ body {
   width: 100%; /* width so elements wrap under the heading */
 
   text-align: center;
-  line-height: 2.25;
-
-  margin-bottom: 50px;
-}
-.main__what-we-do__image:not(:last-child) {
-  margin-right: 30px;
+  line-height: 1.5;
 }
 
 /* Our team */
@@ -316,8 +314,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
   align-items: center;
   justify-content: center;
+
+  gap: 50px 30px;
 
   text-align: center;
 
@@ -326,9 +327,7 @@ body {
 .main__our-team__heading {
   width: 100%; /* width so elements wrap under the heading */
 
-  line-height: 2.25;
-
-  margin-bottom: 50px;
+  line-height: 1.5;
 }
 .main__our-team__figure {
   background-color: var(--background-white);
@@ -336,9 +335,9 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.main__our-team__figure:not(:last-child) {
+/* .main__our-team__figure:not(:last-child) {
   margin-right: 30px;
-}
+} */
 .main__our-team__caption {
   line-height: 2;
   margin: 30px 0;
@@ -388,32 +387,34 @@ body {
 .main__listings {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-items: center;
-  justify-content: flex-start;
-  column-gap: 30px;
-  row-gap: 30px;
+  width: 80%;
+  flex-basis: calc(100% / 3);
+
+  align-self: center;
+  justify-content: center;
+
+  gap: 30px;
+
   background-color: var(--background-white);
 }
 
-.main__listings figure {
+.main__listings__figure {
   max-width: 370px;
-  flex-grow: 4;
 
   border: 1px solid #eee;
 }
 
-.main__listings figure figcaption {
+.main__listings__figure figcaption {
   margin: 20px 24px;
 }
-.main__listings figure figcaption strong {
+.main__listings__figure figcaption strong {
   margin-bottom: 4px;
 }
 
-.main__listings__heading {
+.main__listings__figure__heading {
   line-height: 2.25;
 }
 
-.main__listings__paragraph {
+.main__listings__figure__paragraph {
   line-height: 1.9;
 }
