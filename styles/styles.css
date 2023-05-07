@@ -168,6 +168,7 @@ body {
   cursor: pointer;
   color: var(--text-default);
   line-height: 1;
+
   text-decoration: none;
 }
 .header__navigation__element:first-child a {
@@ -177,14 +178,21 @@ body {
   margin-right: 385px;
 }
 
+.header__navigation__element a:hover {
+  padding-bottom: 33px;
+
+  border-bottom: solid var(--brand-blue) 4px;
+}
+
 .header__navigation__element a:hover,
 .header__navigation__element a:focus,
 .contacts:hover,
 .contacts:focus {
   color: var(--brand-blue);
 }
-.contacts:hover svg path,
-.contacts:focus svg path {
+
+.contacts:hover svg,
+.contacts:focus svg {
   fill: var(--brand-blue);
 }
 
@@ -256,6 +264,8 @@ body {
   text-decoration: none;
 }
 .contacts svg {
+  fill: var(--text-secondary);
+
   margin-right: 10px;
 }
 .contacts__address {
@@ -452,15 +462,14 @@ body {
   width: 170px;
   height: 92px;
 
+  fill: #afb1b8;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.main__regular-customers__element {
-  fill: #afb1b8;
-}
-
-.main__regular-customers__element:hover {
+.main__regular-customers__element:hover,
+.main__regular-customers__element:focus {
   fill: var(--brand-blue);
 
   border: 1px solid var(--brand-blue);
