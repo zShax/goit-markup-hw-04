@@ -173,17 +173,31 @@ body {
 .header__navigation__element:active,
 .header__navigation__element:visited {
   cursor: pointer;
+
+  position: relative;
+
   color: var(--text-default);
   line-height: 1;
 
   text-decoration: none;
 }
 
-.header__navigation__element a:hover,
-.header__navigation__element a:focus {
-  padding-bottom: 33px;
+/* underline effect */
+.header__navigation__element:hover .header__navigation__underline {
+  display: block;
+}
+.header__navigation__underline {
+  position: absolute;
+  top: 48.5px;
 
-  border-bottom: solid var(--brand-blue) 4px;
+  display: none;
+  content: "";
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--brand-blue);
+
+  border-radius: 2px;
 }
 
 .header__navigation__element a:hover,
