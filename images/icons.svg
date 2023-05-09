@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- XML Global Container -->
+<svg width="0" height="0" class="hidden">
 <!-- SVG Sprite -->
 <svg width="0" height="0" class="hidden">
   <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 13" id="envelope">
@@ -101,35 +104,51 @@
 </svg>
 <!-- SVG References -->
 <svg class="icon">
-  <use href="#antenna"></use>
-</svg><svg class="icon">
-  <use href="#astronaut"></use>
-</svg><svg class="icon">
-  <use href="#clock"></use>
-</svg><svg class="icon">
-  <use href="#diagram"></use>
-</svg><svg class="icon">
   <use href="#envelope"></use>
-</svg><svg class="icon">
-  <use href="#facebook"></use>
-</svg><svg class="icon">
-  <use href="#instagram"></use>
-</svg><svg class="icon">
-  <use href="#linkedin"></use>
-</svg><svg class="icon">
-  <use href="#logo2"></use>
-</svg><svg class="icon">
-  <use href="#logo1"></use>
-</svg><svg class="icon">
-  <use href="#logo3"></use>
-</svg><svg class="icon">
-  <use href="#logo4"></use>
-</svg><svg class="icon">
-  <use href="#logo5"></use>
-</svg><svg class="icon">
-  <use href="#logo6"></use>
-</svg><svg class="icon">
+</svg>
+<svg class="icon">
   <use href="#smartphone"></use>
-</svg><svg class="icon">
+</svg>
+<svg class="icon">
+  <use href="#antenna"></use>
+</svg>
+<svg class="icon">
+  <use href="#clock"></use>
+</svg>
+<svg class="icon">
+  <use href="#diagram"></use>
+</svg>
+<svg class="icon">
+  <use href="#astronaut"></use>
+</svg>
+<svg class="icon">
+  <use href="#instagram"></use>
+</svg>
+<svg class="icon">
   <use href="#twitter"></use>
+</svg>
+<svg class="icon">
+  <use href="#facebook"></use>
+</svg>
+<svg class="icon">
+  <use href="#linkedin"></use>
+</svg>
+<svg class="icon">
+  <use href="#logo1"></use>
+</svg>
+<svg class="icon">
+  <use href="#logo2"></use>
+</svg>
+<svg class="icon">
+  <use href="#logo3"></use>
+</svg>
+<svg class="icon">
+  <use href="#logo4"></use>
+</svg>
+<svg class="icon">
+  <use href="#logo5"></use>
+</svg>
+<svg class="icon">
+  <use href="#logo6"></use>
+</svg>
 </svg>
